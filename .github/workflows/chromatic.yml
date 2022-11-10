@@ -21,6 +21,6 @@ jobs:
         uses: chromaui/action@v1
         # Chromatic GitHub Action options
         with:
-          token: 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
+          token: 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
           # 👇 Chromatic projectToken, refer to the manage page to obtain it.
           projectToken: 521edaed974e
