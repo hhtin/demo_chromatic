@@ -27,6 +27,11 @@ Secondary.args = {
   label: "ABCDAA",
 };
 
+export const Thirds = Template.bind({});
+Thirds.args = {
+  label: "ABCDAA",
+};
+
 export const Large = Template.bind({});
 Large.args = {
   size: "large",
