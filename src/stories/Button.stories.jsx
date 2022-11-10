@@ -24,7 +24,7 @@ Primary.args = {
 
 export const Secondary = Template.bind({});
 Secondary.args = {
-  label: "Buttonasadsmkvljsdjl;vmlfvjs",
+  label: "ABCDAA",
 };
 
 export const Large = Template.bind({});
