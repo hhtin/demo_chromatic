@@ -1,24 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { useState } from 'react';
+import { Button } from './stories/Button';
+
+
 
 function App() {
+
+    // Sets the hooks for both the label and primary props
+    const [value, setValue] = useState('Secondary');
+    const [isPrimary, setIsPrimary] = useState(false);
+  
+    // Sets a click handler to change the label's value
+    const handleOnChange = () => {
+      if (!isPrimary) {
+        setIsPrimary(true);
+        setValue('Primary');
+      }
+    };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Button primary={isPrimary} onClick={handleOnChange} label={value} />;
+    </>
   );
 }
 
